@@ -31,15 +31,6 @@ void Sprite::Render() {
 	pd3dSprite->Draw(texture, &visibleRect, NULL, NULL, color);
 }
 
-void Sprite::setCenter(int width, int height, Sprite* sprite) {
-	rect.left = -width / 2;
-	rect.top = -height / 2;
-	rect.right = width / 2;
-	rect.bottom = height / 2;
-
-	sprite->pos = D3DXVECTOR2(-width / 2, -height / 2);
-}
-
 int Sprite::getHeight() {
 	return height;
 }

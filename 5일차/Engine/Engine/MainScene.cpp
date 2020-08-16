@@ -13,7 +13,6 @@ MainScene::MainScene() {
 
 	startButton = new Sprite("Resources/Image/in.png");
 	AddObject(startButton);
-	startButton->setCenter(300, 120, startButton);
 	startButton->setPos(SCREEN_WIDTH / 2, 350);
 
 	exitButton = new Sprite("Resources/Image/out.png");

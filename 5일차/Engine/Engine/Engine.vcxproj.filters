@@ -43,6 +43,24 @@
     <Filter Include="소스 파일\Game">
       <UniqueIdentifier>{bbf14af3-1789-4999-bd26-71e65c381f9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Game\MainScene">
+      <UniqueIdentifier>{c2408a16-0516-47e8-b433-881e78cafef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Game\GameScene">
+      <UniqueIdentifier>{173442aa-4d74-4d06-b605-e83bdddc4adb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Game\GameScene\SceneObject">
+      <UniqueIdentifier>{95720661-b68e-4d6a-b039-40ebd4bd4b7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\MainScene">
+      <UniqueIdentifier>{ec7db3c2-d5b9-4d0a-8947-6ae9a1a3e58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\GameScene">
+      <UniqueIdentifier>{2b954a99-2e0f-421d-914b-c28fd2da201f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\GameScene\SceneObject">
+      <UniqueIdentifier>{12e5f5a9-b9de-41f6-be50-61268a6cb2bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -81,20 +99,23 @@
     <ClCompile Include="Animation.cpp">
       <Filter>소스 파일\Engine\Object</Filter>
     </ClCompile>
-    <ClCompile Include="GameScene.cpp">
-      <Filter>소스 파일\Game</Filter>
-    </ClCompile>
     <ClCompile Include="MainScene.cpp">
-      <Filter>소스 파일\Game</Filter>
+      <Filter>소스 파일\Game\MainScene</Filter>
     </ClCompile>
-    <ClCompile Include="Number.cpp">
-      <Filter>소스 파일\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>소스 파일\Game</Filter>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>소스 파일\Game\GameScene\SceneObject</Filter>
     </ClCompile>
     <ClCompile Include="Background.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Game\GameScene\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Number.cpp">
+      <Filter>소스 파일\Game\GameScene\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\Game\GameScene\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>소스 파일\Game\GameScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,20 +152,23 @@
     <ClInclude Include="Animation.h">
       <Filter>헤더 파일\Engine\Object</Filter>
     </ClInclude>
-    <ClInclude Include="GameScene.h">
-      <Filter>헤더 파일\Game</Filter>
-    </ClInclude>
     <ClInclude Include="MainScene.h">
-      <Filter>헤더 파일\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Number.h">
-      <Filter>헤더 파일\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>헤더 파일\Game</Filter>
+      <Filter>헤더 파일\Game\MainScene</Filter>
     </ClInclude>
     <ClInclude Include="Background.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Game\GameScene\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Number.h">
+      <Filter>헤더 파일\Game\GameScene\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일\Game\GameScene\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>헤더 파일\Game\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>헤더 파일\Game\GameScene\SceneObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

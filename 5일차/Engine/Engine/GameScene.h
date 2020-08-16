@@ -3,21 +3,21 @@
 #include "Sprite.h"
 #include "Animation.h"
 #include "MainScene.h"
+#include <list>
+//Object Headers
 #include "Number.h"
 #include "Player.h"
 #include "Background.h"
-#include <list>
+#include "Bridge.h"
 
 class GameScene : public Scene
 {
 private :
 	int score;
-	bool backgroundInstatiate;
+	bool backgroundInstatiate, bridgeInstantiate;
 
 	std::list<Background *> backgroundList;
-	std::list<Sprite*> bridgeList;
-	std::list<Sprite*> obstacleList;
-	std::list<Sprite*> coinList;
+	std::list<Bridge *> bridgeList;
 
 	Number *numArray[4];
 	Player* player;

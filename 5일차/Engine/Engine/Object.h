@@ -4,7 +4,7 @@
 
 class Object
 {
-protected :
+protected:
 	Object* parent;
 
 	D3DXMATRIX mat;
@@ -20,7 +20,7 @@ protected :
 
 	std::list<Object*> childList;
 
-public :
+public:
 	Object();
 	~Object();
 
@@ -37,10 +37,15 @@ public :
 	D3DXVECTOR2 getPos();
 	RECT getRect();
 
-	int getPosX();
-	int getPosY();
+	float getPosX();
+	float getPosY();
 
 	void setParent(Object* parent);
-	void setPos(int x, int y);
 	void setPos(D3DXVECTOR2 pos);
+
+	template<typename x, typename y>
+	void setPos(x posX, y posY) {
+		pos.x = posX;
+		pos.y = posY;
+	}
 };
