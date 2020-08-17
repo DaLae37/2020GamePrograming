@@ -123,6 +123,9 @@
     <ClCompile Include="Obstacle.cpp">
       <Filter>소스 파일\Game\GameScene\SceneObject</Filter>
     </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>소스 파일\Engine\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -181,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="Obstacle.h">
       <Filter>헤더 파일\Game\GameScene\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>헤더 파일\Engine\Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

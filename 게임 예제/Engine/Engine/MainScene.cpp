@@ -18,8 +18,14 @@ MainScene::MainScene() {
 	AddObject(exitButton);
 	exitButton->setPos(SCREEN_WIDTH / 2, 500);
 
-	soundManager->LoadWaveFile("Resources/Sound/bgm.wav", "Background");
-	soundManager->PlayWaveFile("Background");
+	//soundManager->LoadWaveFile("Resources/Sound/bgm.wav", "Background");
+	//soundManager->PlayWaveFile("Background");
+
+	font = new Font();
+	font->setText("¾È³çÇÏ¼¼¿ä");
+	font->setPos(0, 0);
+	font->setWidth(10);
+	font->setHeight(20);
 }
 
 MainScene::~MainScene() {
@@ -31,6 +37,7 @@ void MainScene::Render() {
 	title->Render();
 	startButton->Render();
 	exitButton->Render();
+	font->Render();
 }
 
 void MainScene::Update(float dTime) {

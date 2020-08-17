@@ -25,6 +25,7 @@
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Coin.cpp" />
     <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Font.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
@@ -52,6 +53,7 @@
     <ClInclude Include="Bridge.h" />
     <ClInclude Include="Coin.h" />
     <ClInclude Include="Console.h" />
+    <ClInclude Include="Font.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="MainScene.h" />
@@ -90,7 +92,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>NotSet</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>

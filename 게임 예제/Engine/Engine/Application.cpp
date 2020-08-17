@@ -101,8 +101,7 @@ int Application::DoMainLoop(Scene* firstScene) {
 			DispatchMessage(&Message);
 		}
 
-		pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET,
-			BG_COLOR, 1.0f, 0);
+		pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET, BG_COLOR, 1.0f, 0);
 		pd3dDevice->BeginScene();
 
 		pd3dSprite->Begin(D3DXSPRITE_ALPHABLEND);
