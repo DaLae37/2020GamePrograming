@@ -7,10 +7,15 @@
 #define BG_COLOR D3DCOLOR_ARGB(255,255,255,255)
 #define PROGRAM_NAME TEXT("Engine")
 #define CONSOLE_NAME TEXT("Console")
+#define _WIN32_WINNT 0x0600
 
 //윈도우 헤더
 #include <Windows.h>
 #include <mmsystem.h>
+#include <stdlib.h>
+#include <malloc.h>
+#include <memory.h>
+#include <tchar.h>
 
 //다이렉트X 헤더
 #include <d3d9.h>
@@ -31,6 +36,7 @@
 #pragma comment (lib, "d3dx9d.lib")
 #pragma comment (lib, "winmm.lib")
 #pragma comment (lib, "dsound.lib")
+#pragma comment(lib, "dxguid.lib")
 
 //상수
 #define KEY_NONE 0

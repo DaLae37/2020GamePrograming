@@ -109,7 +109,7 @@ void Object::setPos(D3DXVECTOR2 pos) {
 }
 
 void Object::setRotation(float rotation) {
-	this->rotation = rotation;
+	this->rotation += rotation;
 }
 
 void Object::setRotationCenter(D3DXVECTOR2 rotationCenter) {

@@ -18,8 +18,8 @@ MainScene::MainScene() {
 	AddObject(exitButton);
 	exitButton->setPos(SCREEN_WIDTH / 2, 500);
 
-	soundManager->LoadWave("Resources/Sound/MusicSurround.wav", "Background");
-	soundManager->Play("Background", true);
+	soundManager->LoadWaveFile("Resources/Sound/bgm.wav", "Background");
+	soundManager->PlayWaveFile("Background");
 }
 
 MainScene::~MainScene() {
